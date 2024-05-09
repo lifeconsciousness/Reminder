@@ -3,8 +3,14 @@ let song = new Audio('./king-gizz-countdown.mp3')
 
 window.onload = function () {
   display = document.querySelector('#time')
-  startTimer(getRandomInt(4, 5), display)
+  startTimer(minute * 7, display)
+  //   startTimer(5, display)
 }
+
+muteButton = document.getElementById('muteBtn')
+muteButton.addEventListener('click', () => {
+  song.load()
+})
 
 function startTimer(duration, display) {
   let timer = duration,
@@ -33,8 +39,3 @@ function getRandomInt(min, max) {
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
-
-button = document.getElementById('muteBtn')
-button.addEventListener('click', () => {
-  song.load()
-})
