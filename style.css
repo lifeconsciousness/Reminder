@@ -20,17 +20,26 @@ main {
   justify-content: center;
 }
 
+#btn-container {
+  position: absolute;
+  top: -100px;
+  left: -1000px;
+  width: 130px;
+  min-width: 63px;
+}
+
 .button-54 {
-  width: 14%;
+  width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
   /* letter-spacing: 2px; */
   text-decoration: none;
   /* text-transform: uppercase; */
-  color: #080808d9;
+  /* color: #313030d9; */
+  color: #181616c7;
   cursor: pointer;
-  border: 3px solid;
+  border: 3px solid #181616ef;
   padding: 0.25em 0.5em;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
   position: relative;
