@@ -10,6 +10,22 @@ body {
   font-weight: 500;
   /* transform: scale(0.5); */
 }
+@media only screen and (max-width: 776px) {
+  #question {
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  #question {
+    transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 478px) {
+  #question {
+    transform: scale(0.45);
+  }
+}
 
 main {
   width: 100%;
@@ -24,7 +40,7 @@ main {
   position: absolute;
   top: -100px;
   left: -1000px;
-  width: 130px;
+  width: 90px;
   min-width: 63px;
 }
 
